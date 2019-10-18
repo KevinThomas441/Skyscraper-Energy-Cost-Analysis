@@ -1,9 +1,9 @@
-# KDD_TermProject
+## KDD_TermProject
 
 
-###Introduction to the team:
+### Introduction to the team:
 
-###Team Name: The Mean Squares
+### Team Name: The Mean Squares
 
 Team Members:
 1. Ravina Gaikawad
@@ -11,26 +11,27 @@ Team Members:
 3. Sahithi Priya Gutta
 4. Uma Sai Madhuri Jetty
 
-###Project Domain: Climate Change
+### Project Domain: Climate Change
 
-###Project Title: Skyscraper's impact on Climate Change. 
+### Project Title: Skyscraper's impact on Climate Change. 
 
-###Project Description: 
+### Project Description: 
 - The project mainly focuses on studying the climate change due to infrastructure modifications in the tall building units/skyscrapers.
 - It includes measurement of energy usage done by the building. Counterfactual models are needed to measure the energy consumption done depending on four energy types based on historic usage rates and observed weather.
 - It can be then predicted how far will it affect and result in climate change in later years. The project has a data of over one thousand building's hourly meter reading for three years.
 	
-###CRISP-DM Process:
-	We have undergone these steps as a part of CRISP-DM:
-	- Business/Research Understanding Phase
-	- Data Understanding Phase
-	- Data Preparation Phase
-	- Modeling Phase
-	- Evaluation Phase
-	- Deployment Phase
+### CRISP-DM Process:
+We have undergone these steps as a part of CRISP-DM:
+- Research Understanding Phase: Buildings and construction account for more than one-third of global energy consumption. They are also responsible for 40% of the world's total CO2 emissions. These numbers continue to rise, as developing countries begin to access previously untapped energy sources. Additionally, as countries start enjoying economic stability, the average size of buildings also increases consequently increasing the overall energy demand.
+<br> To counter this disturbing trend, nations and companies are investing in energy and cost-efficient technologies to better manage the energy needs of the building. However, the impact of these measures has not been accurately estimated. Existing models do not consider data such as the type of meter or assume that all buildings are of the same type. Therefore, we propose a solution that includes these features and models the energy usage of building before and after implementing improvements.
+- Data Understanding Phase
+- Data Preparation Phase
+- Modeling Phase
+- Evaluation Phase
+- Deployment Phase
 	
 	
-###Data Understanding and EDA:
+### Data Understanding and EDA:
 	The dataset has data from four files train.csv, building_meta.csv, weather_[train/test].csv, and sample_submission.csv
 	Each file has details regarding the specific topic.
 	
@@ -72,8 +73,8 @@ Team Members:
 	- Identifying interesting subsets of the observations
 	- Develop an initial idea of possible associations amongst the predictors, as well as between the predictors and the target 		  variable.
 
-###Note:
+### Note:
 	As per the competition rules we are not allowed to share the dataset or any data. However, all the details regarding the dataset are available at https://www.kaggle.com/c/ashrae-energy-prediction/overview
 
-###DataSource reference:
-	- https://www.kaggle.com/c/ashrae-energy-prediction/data
+### References:
+- https://www.kaggle.com/c/ashrae-energy-prediction/data
