@@ -1,8 +1,5 @@
 ## KDD_TermProject
 
-
-### Introduction to the team:
-
 ### Team Name: The Mean Squares
 
 Team Members:
@@ -37,9 +34,9 @@ We have undergone these steps as a part of CRISP-DM:
 	
 	1. train.csv
 	building_id - Foreign key for the building metadata.
-	meter - The meter id code. Read as {0: electricity, 1: chilledwater, 2: steam, 3: hotwater}. Not every building has all meter 		types.
+	meter - The meter id code. Read as {0: electricity, 1: chilledwater, 2: steam, 3: hotwater}. Not every building has all meter types.
 	timestamp - When the measurement was taken
-	meter_reading - The target variable. Energy consumption in kWh (or equivalent). Note that this is real data with measurement 		error, which we expect will impose a baseline level of modeling error.
+	meter_reading - The target variable. Energy consumption in kWh (or equivalent). Note that this is real data with measurement error, which we expect will impose a baseline level of modeling error.
 	
 	2. building_meta.csv
 	site_id - Foreign key for the weather files.
@@ -61,17 +58,17 @@ We have undergone these steps as a part of CRISP-DM:
 	wind_speed - Meters per second
 	
 	4. test.csv
-	The submission files use row numbers for ID codes in order to save space on the file uploads. test.csv has no feature data; it 		exists so you can get your predictions into the correct order.
+	The submission files use row numbers for ID codes in order to save space on the file uploads. test.csv has no feature data; it exists so you can get your predictions into the correct order.
 	row_id - Row id for your submission file
 	building_id - Building id code
 	meter - The meter id code
 	timestamp - Timestamps for the test data period
 	
-	###Generally EDA approach is useful for:
+	### Generally EDA approach is useful for:
 	- Delving into data
 	- Examining important interrelationships between attributes
 	- Identifying interesting subsets of the observations
-	- Develop an initial idea of possible associations amongst the predictors, as well as between the predictors and the target 		  variable.
+	- Develop an initial idea of possible associations amongst the predictors, as well as between the predictors and the target variable.
 
 ### Note:
 	As per the competition rules we are not allowed to share the dataset or any data. However, all the details regarding the dataset are available at https://www.kaggle.com/c/ashrae-energy-prediction/overview
