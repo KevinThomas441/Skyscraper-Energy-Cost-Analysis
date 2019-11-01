@@ -10,12 +10,13 @@ Team Members:
 
 ### Project Domain: Climate Change
 
-### Project Title: Skyscraper's impact on Climate Change. 
+### Project Title: Analyzing the impact of skyscrapers on climate change
 
 ### Project Description: 
-- The project mainly focuses on studying the climate change due to infrastructure modifications in the tall building units/skyscrapers.
-- It includes measurement of energy usage done by the building. Counterfactual models are needed to measure the energy consumption done depending on four energy types based on historic usage rates and observed weather.
-- It can be then predicted how far will it affect and result in climate change in later years. The project has a data of over one thousand building's hourly meter reading for three years.
+- The project focuses on analyzing  the effect of infrastructure modifications from tall building units/skyscrapers on climate change.
+- The project includes a study of the energy usage  by the building. Counterfactual models are required to measure the energy consumption done depending on four energy types. The consumption is based on historic usage rates and observed weather.
+- It can be then predicted how far will it affect and result in climate change in later years. A goal is to develop a predictive model  for climage change based on energy consumption from skyscrapers.
+-The project has a data of over one thousand building's hourly meter reading for three years.
 	
 ### CRISP-DM Process:
 We have undergone these steps as a part of CRISP-DM:
@@ -64,11 +65,11 @@ We have undergone these steps as a part of CRISP-DM:
 	meter - The meter id code
 	timestamp - Timestamps for the test data period
 	
-	### Generally EDA approach is useful for:
-	- Delving into data
-	- Examining important interrelationships between attributes
-	- Identifying interesting subsets of the observations
-	- Develop an initial idea of possible associations amongst the predictors, as well as between the predictors and the target variable.
+### Generally EDA approach is useful for:
+- Delving into data
+- Examining important interrelationships between attributes
+- Identifying interesting subsets of the observations
+- Develop an initial idea of possible associations amongst the predictors, as well as between the predictors and the target variable.
 
 ### Note:
 	As per the competition rules we are not allowed to share the dataset or any data. However, all the details regarding the dataset are available at https://www.kaggle.com/c/ashrae-energy-prediction/overview
