@@ -30,40 +30,49 @@ We have undergone these steps as a part of CRISP-DM:
 	
 	
 ### Data Understanding and EDA:
-	The dataset has data from four files train.csv, building_meta.csv, weather_[train/test].csv, and sample_submission.csv
-	Each file has details regarding the specific topic.
+The dataset has data from four files train.csv, building_meta.csv, weather_[train/test].csv, and sample_submission.csv
+Each file has details regarding the specific topic.
+
+
+#### 1. train.csv
+
+building_id - Foreign key for the building metadata.
+meter - The meter id code. Read as {0: electricity, 1: chilledwater, 2: steam, 3: hotwater}. Not every building has all meter types.
+timestamp - When the measurement was taken
+meter_reading - The target variable. Energy consumption in kWh (or equivalent). Note that this is real data with measurement error, which we expect will impose a baseline level of modeling error.
+
+
+#### 2. building_meta.csv
+
+site_id - Foreign key for the weather files.
+building_id - Foreign key for training.csv
+primary_use - Indicator of the primary category of activities for the building based on EnergyStar property type definitions
+square_feet - Gross floor area of the building
+year_built - Year building was opened
+floor_count - Number of floors of the building
 	
-	1. train.csv
-	building_id - Foreign key for the building metadata.
-	meter - The meter id code. Read as {0: electricity, 1: chilledwater, 2: steam, 3: hotwater}. Not every building has all meter types.
-	timestamp - When the measurement was taken
-	meter_reading - The target variable. Energy consumption in kWh (or equivalent). Note that this is real data with measurement error, which we expect will impose a baseline level of modeling error.
 	
-	2. building_meta.csv
-	site_id - Foreign key for the weather files.
-	building_id - Foreign key for training.csv
-	primary_use - Indicator of the primary category of activities for the building based on EnergyStar property type definitions
-	square_feet - Gross floor area of the building
-	year_built - Year building was opened
-	floor_count - Number of floors of the building
+#### 3. weather_[train/test].csv
+
+Weather data from a meteorological station as close as possible to the site.
+site_id
+air_temperature - Degrees Celsius
+cloud_coverage - Portion of the sky covered in clouds, in oktas
+dew_temperature - Degrees Celsius
+precip_depth_1_hr - Millimeters
+sea_level_pressure - Millibar/hectopascals
+wind_direction - Compass direction (0-360)
+wind_speed - Meters per second
 	
-	3. weather_[train/test].csv
-	Weather data from a meteorological station as close as possible to the site.
-	site_id
-	air_temperature - Degrees Celsius
-	cloud_coverage - Portion of the sky covered in clouds, in oktas
-	dew_temperature - Degrees Celsius
-	precip_depth_1_hr - Millimeters
-	sea_level_pressure - Millibar/hectopascals
-	wind_direction - Compass direction (0-360)
-	wind_speed - Meters per second
 	
-	4. test.csv
-	The submission files use row numbers for ID codes in order to save space on the file uploads. test.csv has no feature data; it exists so you can get your predictions into the correct order.
-	row_id - Row id for your submission file
-	building_id - Building id code
-	meter - The meter id code
-	timestamp - Timestamps for the test data period
+#### 4. test.csv
+
+The submission files use row numbers for ID codes in order to save space on the file uploads. test.csv has no feature data; it exists so you can get your predictions into the correct order.
+row_id - Row id for your submission file
+building_id - Building id code
+meter - The meter id code
+timestamp - Timestamps for the test data period
+	
 	
 ### Generally EDA approach is useful for:
 - Delving into data
@@ -71,8 +80,37 @@ We have undergone these steps as a part of CRISP-DM:
 - Identifying interesting subsets of the observations
 - Develop an initial idea of possible associations amongst the predictors, as well as between the predictors and the target variable.
 
+### Modeling Techniques
+In order to model our data we are planning to use one of the tree-based decision tree algorithm called Light GBM.
+
+#### About Light GBM
+- Light GBM is a gradient boosting framework that uses tree based learning algorithm.
+- Light GBM is prefixed as ‘Light’ because of its high speed. It can handle the large size of data and takes lower memory to run. Also, the algorithm focuses on accuracy of results and GPU learning.
+
+#### Implementation of Light GBM in Project
+- In order to work with this algorithm, we are going to encode the values in the field meter_reading.
+- After having it endcoded, Light GBM algorithm will be applied on this encoded columns.
+- The encoded columns then later can be used to predict the effect of meter reading on climate change.
+
+### To Do:
+
+1. Apply modeling techniques
+	1. Perform One Hot Encoding on the column meter_reading (which has four values for our data).
+	2. Analyze the columns we get after the above procedure.
+	3. Apply Light GBM algorithm on these columns and train the data.
+
+
+2. Prediction
+	1. Predict values we get after training the data and determine the effect of these meter readings on the environment.
+	
+
+3. Visualization
+	1. Based on the predictions we do the data visualization will be done that will enable us to make inferences.	
+
+
 ### Note:
 As per the competition rules we are not allowed to share the dataset or any data. However, all the details regarding the dataset are available [here](https://www.kaggle.com/c/ashrae-energy-prediction/overview)
 
 ### References:
 - https://www.kaggle.com/c/ashrae-energy-prediction/data
+- https://medium.com/@pushkarmandot/https-medium-com-pushkarmandot-what-is-lightgbm-how-to-implement-it-how-to-fine-tune-the-parameters-60347819b7fc
