@@ -16,7 +16,7 @@ Team Members:
 
 <br/>
 
-## Project Domain: Climate Change
+### Project Domain: Climate Change
 
 <br/>
 
