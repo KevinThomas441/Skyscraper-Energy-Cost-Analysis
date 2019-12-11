@@ -1,4 +1,4 @@
-## KDD_TermProject
+##  Analyzing the impact of skyscrapers on climate change
 
 ### Team Name: The Mean Squares
 
@@ -9,8 +9,6 @@ Team Members:
 4. Uma Sai Madhuri Jetty
 
 ### Project Domain: Climate Change
-
-### Project Title: Analyzing the impact of skyscrapers on climate change
 
 ### Project Description: 
 - The project focuses on analyzing  the effect of infrastructure modifications from tall building units/skyscrapers on climate change.
