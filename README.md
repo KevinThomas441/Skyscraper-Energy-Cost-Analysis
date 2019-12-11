@@ -20,13 +20,16 @@ Team Members:
 	
 ### CRISP-DM Process: <br>
 We have undergone these steps as a part of CRISP-DM:
-- Research Understanding Phase: Buildings and construction account for more than one-third of global energy consumption. They are also responsible for 40% of the world's total CO2 emissions. These numbers continue to rise, as developing countries begin to access previously untapped energy sources. Additionally, as countries start enjoying economic stability, the average size of buildings also increases consequently increasing the overall energy demand.
-<br> To counter this disturbing trend, nations and companies are investing in energy and cost-efficient technologies to better manage the energy needs of the building. However, the impact of these measures has not been accurately estimated. Existing models do not consider data such as the type of meter or assume that all buildings are of the same type. Therefore, we propose a solution that includes these features and models the energy usage of building before and after implementing improvements.
+- Research Phase
 - Data Understanding Phase
 - Data Preparation Phase
 - Data Exploration
 - Modeling Phase
 - Evaluation Phase	
+
+### Research Phase: <br>
+Buildings and construction account for more than one-third of global energy consumption. They are also responsible for 40% of the world's total CO2 emissions. These numbers continue to rise, as developing countries begin to access previously untapped energy sources. Additionally, as countries start enjoying economic stability, the average size of buildings also increases consequently increasing the overall energy demand.
+<br> To counter this disturbing trend, nations and companies are investing in energy and cost-efficient technologies to better manage the energy needs of the building. However, the impact of these measures has not been accurately estimated. Existing models do not consider data such as the type of meter or assume that all buildings are of the same type. Therefore, we propose a solution that includes these features and models the energy usage of building before and after implementing improvements.
 	
 ### Data Understanding and EDA: <br>
 The dataset has data from four files train.csv, building_meta.csv, weather_[train/test].csv, and sample_submission.csv
