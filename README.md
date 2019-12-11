@@ -16,10 +16,6 @@ Team Members:
 
 <br/>
 
-### Project Domain: Climate Change
-
-<br/>
-
 ### Project Description
 - The project focuses on analyzing  the effect of infrastructure modifications from tall building units/skyscrapers on climate change.
 - The project includes a study of the energy usage  by the building. Counterfactual models are required to measure the energy consumption done depending on four energy types. The consumption is based on historic usage rates and observed weather.
@@ -107,8 +103,8 @@ There are no features related to people or location. Though the site_id is given
 - Instead of having the whole time stamp we just selected the hour value and stored.<br/><br/>
 
 
-### Modeling
-In our research we found that decision tree is the best algorithm for this problem. Additionaly, since our data set is large we needed an algorithm that dealt with large amounts of data easily. So, we turned to "LightGBM".<br/><br/>
+### Modelling
+Since, our target variable is continuous we had to implement a regression algorithm. In our research we found that decision tree is the best algorithm for this problem. Additionaly, since our data set is large we needed an algorithm that dealt with large amounts of data easily. So, we turned to "LightGBM".<br/><br/>
 
 
 #### About Light GBM
