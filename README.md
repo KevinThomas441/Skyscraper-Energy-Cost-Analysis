@@ -1,5 +1,7 @@
 <h1 align = "center"> Analyzing the Impact of Skyscrapers on Climate Change </h1>
+
 ![Charlotte Skyline](https://v1019.com/wp-content/uploads/sites/51/2018/01/Charlotte-Skyline.jpg)
+
 ### Team Name: The Mean Squares
 
 Team Members:
