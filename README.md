@@ -1,9 +1,11 @@
 <h1 align = "center"> Analyzing the Impact of Skyscrapers on Climate Change </h1>
 
+<br/>
+
 ![Charlotte Skyline](https://v1019.com/wp-content/uploads/sites/51/2018/01/Charlotte-Skyline.jpg)
 
 
-### Team Name: The Mean Squares<br/><br/>
+### Team Name: The Mean Squares
 
 Team Members:
 1. Ravina Gaikawad
@@ -11,8 +13,8 @@ Team Members:
 3. Sahithi Priya Gutta
 4. Uma Sai Madhuri Jetty
 
-
-### Project Domain: Climate Change<br/><br/>
+<br/>
+### Project Domain: Climate Change<br/>
 
 ### Project Description:
 - The project focuses on analyzing  the effect of infrastructure modifications from tall building units/skyscrapers on climate change.
