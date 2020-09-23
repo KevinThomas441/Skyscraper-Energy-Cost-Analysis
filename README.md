@@ -12,6 +12,9 @@
 - It can be then predicted how far will it affect and result in climate change in later years. A goal is to develop a predictive model  for climage change based on energy consumption from skyscrapers.
 -The project has a data of over one thousand building's hourly meter reading for three years.<br/><br/>
 
+### Data
+The data can be found [here](https://www.kaggle.com/c/ashrae-energy-prediction/overview)<br/><br/>
+
 
 ### CRISP-DM Process
 We have undergone these steps as a part of CRISP-DM:
@@ -126,10 +129,6 @@ Team Members:
 2. Kevin Thomas
 3. Sahithi Priya Gutta
 4. Uma Sai Madhuri Jetty
-
-### Notes
-As per the competition rules we are not allowed to share the dataset or any data. However, all the details regarding the dataset are available [here](https://www.kaggle.com/c/ashrae-energy-prediction/overview)<br/><br/>
-
 
 
 ### References
