@@ -6,16 +6,6 @@
 
 <br/>
 
-### Team Name: The Mean Squares
-
-Team Members:
-1. Ravina Gaikawad
-2. Kevin Thomas
-3. Sahithi Priya Gutta
-4. Uma Sai Madhuri Jetty
-
-<br/>
-
 ### Project Description
 - The project focuses on analyzing  the effect of infrastructure modifications from tall building units/skyscrapers on climate change.
 - The project includes a study of the energy usage  by the building. Counterfactual models are required to measure the energy consumption done depending on four energy types. The consumption is based on historic usage rates and observed weather.
@@ -45,42 +35,42 @@ Each file has details regarding the specific topic.<br/><br/>
 
 #### 1. train.csv
 
-building_id - Foreign key for the building metadata.
-meter - The meter id code. Read as {0: electricity, 1: chilledwater, 2: steam, 3: hotwater}. Not every building has all meter types.
-timestamp - When the measurement was taken
-meter_reading - The target variable. Energy consumption in kWh (or equivalent). Note that this is real data with measurement error, which we expect will impose a baseline level of modeling error.<br/><br/>
+- building_id - Foreign key for the building metadata.
+- meter - The meter id code. Read as {0: electricity, 1: chilledwater, 2: steam, 3: hotwater}. Not every building has all meter types.
+- timestamp - When the measurement was taken
+- meter_reading - The target variable. Energy consumption in kWh (or equivalent). Note that this is real data with measurement error, which we expect will impose a baseline level of - modeling error.<br/><br/>
 
 
 #### 2. building_meta.csv
 
-site_id - Foreign key for the weather files.
-building_id - Foreign key for training.csv
-primary_use - Indicator of the primary category of activities for the building based on EnergyStar property type definitions
-square_feet - Gross floor area of the building
-year_built - Year building was opened
-floor_count - Number of floors of the building<br/><br/>
+- site_id - Foreign key for the weather files.
+- building_id - Foreign key for training.csv
+- primary_use - Indicator of the primary category of activities for the building based on EnergyStar property type definitions
+- square_feet - Gross floor area of the building
+- year_built - Year building was opened
+- floor_count - Number of floors of the building<br/><br/>
 	
 	
 #### 3. weather_[train/test].csv
 
 Weather data from a meteorological station as close as possible to the site.
-site_id
-air_temperature - Degrees Celsius
-cloud_coverage - Portion of the sky covered in clouds, in oktas
-dew_temperature - Degrees Celsius
-precip_depth_1_hr - Millimeters
-sea_level_pressure - Millibar/hectopascals
-wind_direction - Compass direction (0-360)
-wind_speed - Meters per second<br/><br/>
+- site_id - Primary Key
+- air_temperature - Degrees Celsius
+- cloud_coverage - Portion of the sky covered in clouds, in oktas
+- dew_temperature - Degrees Celsius
+- precip_depth_1_hr - Millimeters
+- sea_level_pressure - Millibar/hectopascals
+- wind_direction - Compass direction (0-360)
+- wind_speed - Meters per second<br/><br/>
 	
 	
 #### 4. test.csv
 
 The submission files use row numbers for ID codes in order to save space on the file uploads. test.csv has no feature data; it exists so you can get your predictions into the correct order.
-row_id - Row id for your submission file
-building_id - Building id code
-meter - The meter id code
-timestamp - Timestamps for the test data period<br/><br/>
+- row_id - Row id for your submission file
+- building_id - Building id code
+- meter - The meter id code
+- timestamp - Timestamps for the test data period<br/><br/>
 	
 	
 ### Generally, EDA is useful for
@@ -131,9 +121,15 @@ Our model can be used to improve the energy efficiency of the buildings which ca
 - This file requires Jupyter Notebooks or Google Colab to run.
 - Packages to be installed: Numpy, Pandas, Sklearn, Matplotlib, Seaborn, LightGBM, tqdm.<br/><br/>
 
+Team Members:
+1. Ravina Gaikawad
+2. Kevin Thomas
+3. Sahithi Priya Gutta
+4. Uma Sai Madhuri Jetty
 
 ### Notes
 As per the competition rules we are not allowed to share the dataset or any data. However, all the details regarding the dataset are available [here](https://www.kaggle.com/c/ashrae-energy-prediction/overview)<br/><br/>
+
 
 
 ### References
